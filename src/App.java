@@ -20,9 +20,8 @@ public class App {
         for (String student : students) {
             System.out.println(student);
         }
-        students.remove(students.size()-1);
+        students.remove(students.size() - 1);
         System.out.println(students);
-
 
         Set<String> teachers = new HashSet<>();
         teachers.add("Jorge");
@@ -36,6 +35,15 @@ public class App {
         parents.put(2, "Martha");
         System.out.println(parents);
         System.out.println(parents.size());
+
+        List<Course> courses = new ArrayList<>();
+        courses.add(new Course("SI400", "Database", 4));
+        courses.add(new Course("SI401", "Object Oriented Programming", 5));
+        courses.add(new Course("SI402", "Mobile Development", 5));
+
+        for(Course course: courses) {
+            System.out.println(course);
+        }
 
     }
 }
